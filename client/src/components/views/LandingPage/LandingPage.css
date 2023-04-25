@@ -1,0 +1,111 @@
+.Hero{
+    margin:0 auto;
+    width:100%; 
+    height:300px;
+    text-align:center;
+    line-height:250px; 
+    color:#fff;
+    font-size:18px;
+    text-shadow:2px 2px 2px lightgray;
+    overflow:hidden;
+    
+}
+
+.Hero p {
+    margin:0 auto;
+    width:100%; 
+    height:300px;
+    background:url("https://res.cloudinary.com/seoyoung/image/upload/c_scale,w_2000/v1682418441/mug-6966047_1920_fa4ktg.jpg") no-repeat 0 -600px;
+    animation: motion 15s linear 0s infinite alternate; margin-top: 0;
+}
+
+@keyframes motion {
+	0% { transform:scale(1.0); 
+        transition: transform 8s;  }
+	100% {transform:scale(1.2); 
+        transition: transform 7s;}
+}
+
+.CardBnr:hover{
+    transition: 1s;
+    box-shadow: 5px 5px 5px 5px #ccc;
+
+}
+
+
+.ImgCon {
+    width:100%; 
+    margin: 5rem auto;
+    display:flex; 
+    flex-wrap:wrap;
+   
+}
+
+.ImgCon div{
+
+    width:32%;
+    position:relative;
+    display:flex;
+    overflow:hidden;
+    margin-left:1%; 
+ 
+
+}
+
+.ImgCon div img {
+
+   width:100%;
+   height:250px;
+   
+}
+
+
+.ImgCon div img:hover{
+    transform:scale(1.1); 
+    transition: transform 1s; 
+}
+
+.ImgCon div p{
+
+    position:absolute; 
+    top:50%; 
+    left:50%; 
+    transform:translate(-50%, -50%);
+    color:#fff;
+    border:1px solid #fff;
+    padding:8px;
+    text-align: center;
+}
+
+
+
+@media screen and (max-width: 1000px) {
+
+   
+    
+    .ImgCon div{
+        margin:0 auto;
+        width:90%;
+        position:relative;
+        display:flex;
+        margin-bottom:1rem;
+    
+    }
+
+ 
+  }
+
+  @media screen and (max-width: 700px) {
+
+   
+    
+    .ImgCon div{
+    
+        width:100%;
+        position:relative;
+        display:flex
+    
+    }
+
+ 
+  }
